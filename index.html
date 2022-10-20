@@ -2,19 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="src/sass/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,900&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-<button class="back-to-top" style="display: block;">^</button>
+<button class="back-to-top" style="display: block;"><i class="fas fa-step-backward"></i></button>
 <!--start header-->
 <header>
     <div class="container">
@@ -44,7 +42,7 @@
                 <p class="primary">Tham gia dự án lớn nhất khối Ngân hàng với vị trí:</p>
                 <h1>Junior Lập Trình Viên Java - Khối Công Nghệ NCB</h1>
                 <div class="banner-area__content-group">
-                    <button class="recruitment apply-now"><a>Ứng tuyển ngay<span>-></span></a></button>
+                    <button class="recruitment apply-now"><a>Ứng tuyển ngay<span><img src="images/button-right.png" alt=""></span></a></button>
                     <div class="banner-area__content-group-support">
                         <p>Hỗ trợ tuyển dụng bởi</p>
                         <img src="images/itnavi-logo1.png" alt="">
@@ -123,7 +121,7 @@
                     </nav>
                     <p class="primary">Bạn sẽ có cơ hội được làm việc trong môi trường năng động và phát triển lên Key
                         member.</p>
-                    <button class="recruitment apply-now"><a>Ứng tuyển ngay<span>-></span></a></button>
+                    <button class="recruitment apply-now"><a>Ứng tuyển ngay<span><img src="images/button-right.png"></span></a></button>
                 </div>
                 <div class="details-area__footer-column">
                     <div class="column__content">
@@ -247,13 +245,13 @@
             </div>
         </div>
         <div class="introduce-area-dot">
-            <div class="dot-left"><span> < </span></div>
+            <div class="dot-left"><span><i class="fas fa-chevron-left"></i></span></div>
             <div class="dot-child active"></div>
             <div class="dot-child"></div>
             <div class="dot-child"></div>
             <div class="dot-child"></div>
             <div class="dot-child"></div>
-            <div class="dot-right"><span> > </span></div>
+            <div class="dot-right"><span> <i class="fas fa-chevron-right"></i> </span></div>
         </div>
     </div>
 </section>
@@ -270,9 +268,9 @@
                         <input type="text" class="name" placeholder="Họ và tên"><br>
                         <input type="text" class="phone" placeholder="Số điện thoại"><br>
                         <input type="email" class="email" placeholder="Email"><br>
-                        <input type="file"> 
-                        <label><i class="fas fa-paperclip"></i> Đính kèm CV của bạn</label><br>
-                        <button class="apply-now"><a href="">Ứng tuyển ngay<span>-></span></a></button>
+                        <input type="file" name="file" id="file" />
+                        <label for="file"><i class="fas fa-paperclip"></i> Đính kèm CV của bạn</label><br>
+                        <button class="apply-now"><a href="">Ứng tuyển ngay<span><img src="images/button-right.png" alt=""></span></a></button>
                             <div class="support">
                                 <p>Hỗ trợ tuyển dụng bởi</p>
                                 <img src="images/itnavi-logo2.png" alt="#">
@@ -282,7 +280,7 @@
                 <div class="footer-area__header-column">
                     <h3>Việc làm khác tại</h3>
                     <h1>Ngân hàng TMCP Quốc Dân (NCB)</h1>
-                    <div class="footer-area__header-column__content active">
+                    <div class="footer-area__header-column__content">
                         <h4>Junior Chuyên Viên An Ninh Bảo Mật</h4>
                         <p>Lương - Upto 1500$</p>
                     </div>
@@ -316,8 +314,10 @@
     </div>
 </footer>
 <!--end footer-->
+<script src="https://kit.fontawesome.com/a1d9ff5267.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="src/scripts.js"></script>
+
 </body>
 </html>
 
