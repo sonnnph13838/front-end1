@@ -302,15 +302,14 @@
 }
 @media screen and (min-width: 1921px) and (max-width: 6144px) {
   header {
-    background-color: #0A4595;
-
+    max-width: 1920px;
+    margin: 0 auto;
     .container {
-      margin: 0 auto;
       display: flex;
       overflow: hidden;
       //justify-content: space-between;
       padding: 0 20%;
-
+      background-color: #0A4595;
       &__brand {
         margin-right: 95px;
 

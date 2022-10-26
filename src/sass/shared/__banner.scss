@@ -305,7 +305,7 @@
       height: 100%;
       .banner-area {
         position: absolute;
-        top: 28%;
+        top: 65%;
         left: 20%;
         &__content {
           .primary {
@@ -400,13 +400,14 @@
     }
 
     .container {
+      max-width: 1920px;
       margin: 0 auto;
       overflow: hidden;
       height: 100%;
       .banner-area {
         position: absolute;
-        top: 28%;
-        left: 20%;
+        top: 20%;
+        left: 40%;
         &__content {
           .primary {
             font-family: 'roboto';
@@ -453,7 +454,7 @@
                 color: #FFFFFF;
 
                 span {
-                  padding: 26px 20px;
+                  padding: 25px 20px;
                   background: #041D51;
                   color: #FFFFFF;
                   margin-left: 40px;

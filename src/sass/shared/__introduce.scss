@@ -11,7 +11,7 @@
         img {
           display: none;
           width: 775px;
-          height: 615px;
+          height: 100%;
         }
       }
 
@@ -153,7 +153,7 @@
     }
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 1px) and (max-width: 259px) {
   .introduce {
     .container {
 
@@ -214,6 +214,7 @@
       }
 
       .introduce-area-dot {
+
         bottom: 1072px;
         margin-left: 18%;
 
@@ -247,158 +248,191 @@
     }
   }
 }
-@media screen and (max-width: 1536px) {
+@media screen and (min-width: 360px) and (max-width: 767px) {
   .introduce {
     .container {
-      max-width: 1536px;
-      margin: 0 auto;
 
       .introduce-area {
-        display: flex;
-        margin-bottom: 95px;
+        display: block;
+        margin-bottom: 75px;
 
         &__single:nth-child(1) {
           img {
-            display: none;
-            width: 520px;
-            height: 100%;
+            width: 100%;
+            height: 277px;
           }
         }
 
         &__single:nth-child(2) {
-          background: #0057A8;
-          box-shadow: 4px 0px 10px rgba(52, 52, 52, 0.15);
+          padding-bottom: 20px;
 
           .introduce-area__single-header {
-            padding: 47px 0 0 82px;
-            margin-bottom: 67px;
+            margin-bottom: 35px;
+            padding: 40px 20px 0 20px;
 
             h2 {
-              font-family: 'Roboto';
-              font-style: normal;
-              font-weight: 700;
-              font-size: 28px;
-              line-height: 33px;
-              letter-spacing: 0.05em;
-              color: #FFFFFF;
-              margin-bottom: 4px;
+              font-size: 20px;
             }
 
             h6 {
-              font-family: 'Roboto';
-              font-style: normal;
-              font-weight: 500;
-              font-size: 16px;
-              line-height: 19px;
-              /* identical to box height */
-
-
-              color: #FFFFFF;
+              font-size: 12px;
             }
           }
 
           .introduce-area__single-content {
-            padding-left: 62px;
-            padding-right: 64.72px;
-            margin-bottom: 51px;
-            display: flex;
+            margin-bottom: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
 
             span {
-              color: #FFFFFF;
-              margin-right: 14px;
+              font-size: 13px;
             }
 
             p {
-              font-family: 'Roboto';
-              font-style: normal;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 26px;
-              /* or 162% */
-
-
-              color: #FFFFFF;
+              font-size: 13px;
             }
           }
         }
 
         &__single:nth-child(3) {
-          background-color: #B11B1F;
-          text-align: center;
+          padding: 20px;
 
           h1 {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 32px;
-            letter-spacing: 0.05em;
-            margin-top: 85%;
-            color: #FFFFFF;
+            margin-top: 0;
+            font-size: 28px;
           }
 
           img {
-
           }
         }
       }
 
       .introduce-area-dot {
-        position: relative;
-        bottom: 180px;
-        margin-left: 6%;
-
+        position: absolute;
+        top: 515%;
+        bottom: 0;
+        margin-left: 0;
+        left: 30%;
         .dot-left {
-          width: 41px;
-          height: 41px;
-          margin: 0 2px;
-          background-color: #FFFFFF;
-          border-radius: 50%;
-          display: inline-block;
-          transition: background-color 0.6s ease;
-          border: 0.5px solid #DEDEDE;
-          cursor: pointer;
+          width: 25px;
+          height: 25px;
 
           span {
-            font-size: 25px;
-            font-weight: bolder;
-            top: 7px;
-            position: relative;
-            left: 11px;
+            font-size: 15px;
+            top: 2px;
+            left: 7px;
           }
         }
 
         .dot-right {
-          cursor: pointer;
-          width: 41px;
-          height: 41px;
-          margin: 0 2px;
-          border-radius: 50%;
-          display: inline-block;
-          transition: background-color 0.6s ease;
-          background: #FFFFFF;
-          border: 0.5px solid #DEDEDE;
+          width: 25px;
+          height: 25px;
 
           span {
-            font-size: 25px;
-            font-weight: bolder;
-            top: 7px;
-            position: relative;
-            left: 11px;
+            font-size: 15px;
+            top: 2px;
+            left: 7px;
           }
         }
 
         .dot-child {
-          position: relative;
-          top: 8px;
-          padding: 10px;
-          margin: 0 7px;
-          background-color: #82C2FE;
-          border-radius: 50%;
-          display: inline-block;
+          top: 6px;
+          padding: 7px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .introduce {
+    .container {
+
+      .introduce-area {
+        display: block;
+        margin-bottom: 75px;
+
+        &__single:nth-child(1) {
+          img {
+            width: 100%;
+            height: 277px;
+          }
         }
 
-        .active {
-          background-color: #0057A8;
+        &__single:nth-child(2) {
+          padding-bottom: 20px;
+
+          .introduce-area__single-header {
+            margin-bottom: 35px;
+            padding: 40px 20px 0 5%;
+
+            h2 {
+              font-size: 20px;
+            }
+
+            h6 {
+              font-size: 12px;
+            }
+          }
+
+          .introduce-area__single-content {
+            margin-bottom: 30px;
+            padding-left: 5%;
+            padding-right: 20px;
+
+            span {
+              font-size: 13px;
+            }
+
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+
+        &__single:nth-child(3) {
+          padding: 20px;
+
+          h1 {
+            margin-top: 0;
+            font-size: 28px;
+          }
+
+          img {
+          }
+        }
+      }
+
+      .introduce-area-dot {
+        position: absolute;
+        top: 385%;
+        bottom: 0;
+        margin-left: 0;
+        left: 38%;
+        .dot-left {
+          width: 25px;
+          height: 25px;
+
+          span {
+            font-size: 15px;
+            top: 2px;
+            left: 7px;
+          }
+        }
+
+        .dot-right {
+          width: 25px;
+          height: 25px;
+
+          span {
+            font-size: 15px;
+            top: 2px;
+            left: 7px;
+          }
+        }
+
+        .dot-child {
+          top: 6px;
+          padding: 7px;
         }
       }
     }
