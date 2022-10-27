@@ -9,32 +9,6 @@ $(document).ready(function () {
             $(".back-to-top").hide();
         }
     })
-    let isMobile = window.matchMedia("only screen and (min-width: 360px) and (max-width: 767px)").matches;
-    let isTablet = window.matchMedia("only screen and (min-width: 768px) and (max-width: 1024px)").matches;
-    if(isMobile){
-        // alert("is moblie")
-        $(".job-desc").click(function () {
-            document.documentElement.scrollTop = 2250;
-        })
-        $(".recruitment").click(function () {
-            document.documentElement.scrollTop = 4028;
-        })
-    }else if(isTablet){
-        // alert("is tablet")
-        $(".job-desc").click(function () {
-            document.documentElement.scrollTop = 1523;
-        })
-        $(".recruitment").click(function () {
-            document.documentElement.scrollTop = 3023;
-        })
-    }else {
-        $(".job-desc").click(function () {
-            document.documentElement.scrollTop = 1625;
-        })
-        $(".recruitment").click(function () {
-            document.documentElement.scrollTop = 3125;
-        })
-    }
     $(".back-to-top").click(function () {
         function setT() {
             if (document.documentElement.scrollTop > 0) {
