@@ -20,13 +20,13 @@ $(document).ready(function () {
             document.documentElement.scrollTop = 4028;
         })
     }else if(isTablet){
-        alert("is tablet")
-        // $(".job-desc").click(function () {
-        //     document.documentElement.scrollTop = 1625;
-        // })
-        // $(".recruitment").click(function () {
-        //     document.documentElement.scrollTop = 3125;
-        // })
+        // alert("is tablet")
+        $(".job-desc").click(function () {
+            document.documentElement.scrollTop = 1523;
+        })
+        $(".recruitment").click(function () {
+            document.documentElement.scrollTop = 3023;
+        })
     }else {
         $(".job-desc").click(function () {
             document.documentElement.scrollTop = 1625;
