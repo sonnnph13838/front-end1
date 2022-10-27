@@ -15,12 +15,12 @@
 
       .banner-area {
         padding: 0 20px;
-
+        background-image: url("../../../images/banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 555px;
+        padding: 15% 0 0 5%;
         &__content {
-          position: relative;
-          bottom: 515px;
-          left: 0px;
-
           .primary {
             font-family: 'Roboto';
             width: 90%;
@@ -109,16 +109,15 @@
       max-width: 1920px;
       margin: 0 auto;
       overflow: hidden;
-      height: 600px;
 
       .banner-area {
         padding: 0 20px;
-
+        background-image: url("../../../images/banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 835px;
         &__content {
-          position: relative;
-          bottom: 515px;
-          left: 0px;
-
+          padding: 35% 0 0 5%;
           .primary {
             font-family: 'Roboto';
             width: 90%;
@@ -207,13 +206,14 @@
       max-width: 1920px;
       margin: 0 auto;
       overflow: hidden;
-      height: 600px;
 
       .banner-area {
-        position: relative;
-        bottom: 54%;
-        left: 10%;
+        background-image: url("../../../images/banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 666px;
         &__content {
+          padding: 15% 0 0 5%;
           .primary {
             font-family: 'Roboto';
             width: 90%;
@@ -304,10 +304,12 @@
       overflow: hidden;
       height: 100%;
       .banner-area {
-        position: absolute;
-        top: 65%;
-        left: 20%;
+        background-image: url("../../../images/banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1000px;
         &__content {
+          padding: 15% 0 0 20%;
           .primary {
             font-family: 'roboto';
             font-style: normal;
@@ -327,7 +329,7 @@
             font-size: 36px;
             line-height: 49px;
             /* or 136% */
-            width: 54%;
+            width: 30%;
             margin-bottom: 31px;
             color: #1F3D7D;
           }
@@ -405,10 +407,12 @@
       overflow: hidden;
       height: 100%;
       .banner-area {
-        position: absolute;
-        top: 20%;
-        left: 40%;
+        background-image: url("../../../images/banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 555px;
         &__content {
+          padding: 10% 0 0 20%;
           .primary {
             font-family: 'roboto';
             font-style: normal;

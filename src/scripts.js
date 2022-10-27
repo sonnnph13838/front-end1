@@ -9,15 +9,25 @@ $(document).ready(function () {
             $(".back-to-top").hide();
         }
     })
-    let isMobile = window.matchMedia("only screen and (max-width: 360px)").matches;
+    let isMobile = window.matchMedia("only screen and (min-width: 360px) and (max-width: 767px)").matches;
+    let isTablet = window.matchMedia("only screen and (min-width: 768px) and (max-width: 1024px)").matches;
     if(isMobile){
+        // alert("is moblie")
         $(".job-desc").click(function () {
-            document.documentElement.scrollTop = 2220;
+            document.documentElement.scrollTop = 2250;
         })
         $(".recruitment").click(function () {
-            document.documentElement.scrollTop = 4256;
+            document.documentElement.scrollTop = 4028;
         })
-    }else{
+    }else if(isTablet){
+        alert("is tablet")
+        // $(".job-desc").click(function () {
+        //     document.documentElement.scrollTop = 1625;
+        // })
+        // $(".recruitment").click(function () {
+        //     document.documentElement.scrollTop = 3125;
+        // })
+    }else {
         $(".job-desc").click(function () {
             document.documentElement.scrollTop = 1625;
         })

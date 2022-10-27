@@ -1,10 +1,10 @@
 .details {
   background-image: url("../../../images/bgr.png");
   background-repeat: no-repeat;
-  height: 725px;
   background-size: 100% 100%;
   max-width: 1920px;
   margin: 0 auto;
+  padding-bottom: 50px;
   .container {
     max-width: 1920px;
     margin: 0 auto;
@@ -64,8 +64,8 @@
 
       &__footer {
         display: grid;
-        grid-template-columns:1fr 1fr;
-        grid-gap: 0;
+        grid-template-columns:55% 45%;
+        grid-gap: 5px;
 
         &-column:first-child {
           .navbar {
@@ -128,8 +128,7 @@
           }
 
           .apply-now {
-            margin-left: 50px;
-            margin-right: 40px;
+            margin-left: 10%;
             border: none;
             padding: 25px 0 25px 57px;
             background: #1F3D7D;
@@ -148,7 +147,7 @@
                 padding: 24px 20px;
                 background: #041D51;
                 color: #FFFFFF;
-                margin-left: 40px;
+                margin-left: 10px;
               }
             }
           }
@@ -165,7 +164,7 @@
 
         &-column:last-child {
           .column__content {
-            width: 78%;
+            width: 85%;
 
             &--hidden {
               display: none;
