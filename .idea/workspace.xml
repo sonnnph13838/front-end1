@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9ff5f672-cfdc-4a31-8057-1742d4d215b8" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/shared/__details.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/shared/__details.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/shared/__banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/shared/__banner.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/shared/__header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/shared/__header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/shared/__overview.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/shared/__overview.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/styles.css.map" afterDir="false" />
     </list>
@@ -31,16 +34,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/vue",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/vietphu&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\ncb\images" />
@@ -50,7 +53,10 @@
       <recent name="C:\ncb\src\sass" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.heart.html">
+    <configuration name="heart.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ncb/heart.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="index1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ncb/index1.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -62,6 +68,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.heart.html" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.index1.html" />
         <item itemvalue="JavaScript Debug.test.html" />
@@ -91,6 +98,15 @@
       <workItem from="1666926986887" duration="612000" />
       <workItem from="1666939113199" duration="2547000" />
       <workItem from="1667183390975" duration="708000" />
+      <workItem from="1667188575833" duration="629000" />
+      <workItem from="1667296026913" duration="2055000" />
+      <workItem from="1667316726922" duration="16000" />
+      <workItem from="1667362393047" duration="1548000" />
+      <workItem from="1667370490235" duration="10799000" />
+      <workItem from="1667528501265" duration="14000" />
+      <workItem from="1667546613195" duration="10305000" />
+      <workItem from="1667559503003" duration="46000" />
+      <workItem from="1667573049327" duration="179000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1666248162132</created>
@@ -141,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666861749791</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update">
+      <created>1667188598754</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667188598754</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,5 +1,109 @@
+.banner {
+  .banner-bg {
+    width: 100%;
+  }
 
-@media screen and (min-width: 1px) and (max-width: 360px) {
+  .container {
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100%;
+
+    .banner-area {
+      background-image: url("../../../images/banner.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 1000px;
+
+      &__content {
+        padding: 250px 0 0 20%;
+
+        .primary {
+          font-family: 'roboto';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 23px;
+          line-height: 28px;
+          /* identical to box height */
+          margin-bottom: 7px;
+
+          color: #000000;
+        }
+
+        h1 {
+          text-transform: capitalize;
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 49px;
+          /* or 136% */
+          width: 450px;
+          margin-bottom: 31px;
+          color: #1F3D7D;
+        }
+
+        &-group {
+          display: flex;
+
+          .apply-now {
+            margin-right: 40px;
+            border: none;
+            padding: 25px 0 25px 57px;
+            background: #1F3D7D;
+            box-shadow: 0px 2px 2px #D91C23;
+            cursor: pointer;
+
+            a {
+              text-decoration: none;
+              font-family: 'Roboto';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 28px;
+              color: #FFFFFF;
+
+              span {
+                padding: 26px 20px;
+                background: #041D51;
+                color: #FFFFFF;
+                margin-left: 40px;
+              }
+            }
+          }
+
+          .apply-now:hover {
+            background: #BC1C20;
+            box-shadow: 0px 2px 2px #1A417E;
+
+            a {
+              span {
+                background: #8E070A;
+              }
+            }
+          }
+
+          &-support {
+            .recruitment-support {
+              font-family: "Roboto";
+              font-style: italic;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 19px;
+              margin-left: 4px;
+              color: #474747;
+            }
+
+            .logo-itnavi {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 359px) {
   .banner {
     .banner-bg {
       width: 345%;
@@ -19,8 +123,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 555px;
-        padding: 15% 0 0 5%;
+
         &__content {
+          padding: 105px 0 0 5%;
+
           .primary {
             font-family: 'Roboto';
             width: 90%;
@@ -57,6 +163,7 @@
               background: #1F3D7D;
               box-shadow: 0px 2px 2px #D91C23;
               cursor: pointer;
+
               a {
                 text-decoration: none;
                 font-family: 'Roboto';
@@ -99,53 +206,35 @@
     }
   }
 }
-@media screen and (min-width: 361px) and (max-width: 767px){
+
+@media screen and (min-width: 359px) and (max-width: 767px) {
   .banner {
     .banner-bg {
       height: 100%;
     }
 
     .container {
-      max-width: 1920px;
-      margin: 0 auto;
-      overflow: hidden;
-
       .banner-area {
-        padding: 0 20px;
-        background-image: url("../../../images/banner.png");
-        background-repeat: no-repeat;
-        background-size: cover;
         height: 835px;
+
         &__content {
-          padding: 35% 0 0 5%;
+          padding: 170px 0 0 30px;
+
           .primary {
-            font-family: 'Roboto';
-            width: 90%;
-            font-style: normal;
             font-weight: 400;
             font-size: 16px;
             line-height: 19px;
-            /* identical to box height */
             margin-bottom: 6px;
-
-            color: #000000;
           }
 
           h1 {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 800;
             font-size: 24px;
             line-height: 29px;
-            /* or 136% */
             width: 90%;
             margin-bottom: 20px;
-            color: #1F3D7D;
           }
 
           &-group {
-            display: flex;
-
             .apply-now {
               display: none;
               margin-right: 40px;
@@ -154,6 +243,7 @@
               background: #1F3D7D;
               box-shadow: 0px 2px 2px #D91C23;
               cursor: pointer;
+
               a {
                 text-decoration: none;
                 font-family: 'Roboto';
@@ -173,21 +263,9 @@
             }
 
             &-support {
-              p {
-                font-family: 'Roboto';
-                font-style: italic;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 14px;
-                /* identical to box height */
-                margin-left: 4px;
-
-                color: #474747;
-              }
-
-              img {
-                width: 70%;
-                height: 70%;
+              .logo-itnavi {
+                width: 150px;
+                height: 65px;
               }
             }
           }
@@ -196,7 +274,8 @@
     }
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px){
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .banner {
     .banner-bg {
       width: 100%;
@@ -212,8 +291,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 666px;
+
         &__content {
-          padding: 15% 0 0 5%;
+          padding: 215px 0 0 170px;
+
           .primary {
             font-family: 'Roboto';
             width: 90%;
@@ -234,7 +315,7 @@
             font-size: 24px;
             line-height: 29px;
             /* or 136% */
-            width: 38%;
+            width: 340px;
             margin-bottom: 20px;
             color: #1F3D7D;
           }
@@ -250,19 +331,12 @@
               background: #1F3D7D;
               box-shadow: 0px 2px 2px #D91C23;
               cursor: pointer;
-              a {
-                text-decoration: none;
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 22px;
-                line-height: 28px;
-                color: #FFFFFF;
 
-                span {
-                  padding: 20px 20px;
-                  background: #041D51;
-                  color: #FFFFFF;
+              .apply {
+                font-size: 22px;
+
+                .arrow-right {
+                  padding: 27px 20px;
                   margin-left: 25px;
                 }
               }
@@ -270,21 +344,14 @@
 
             &-support {
               padding-top: 10px;
-              p {
-                font-family: 'Roboto';
-                font-style: italic;
-                font-weight: 500;
-                font-size: 10px;
-                line-height: 14px;
-                /* identical to box height */
-                margin-left: 4px;
 
-                color: #474747;
+              .recruitment-support {
+                font-size: 14px;
               }
 
-              img {
-                width: 60%;
-                height: 60%;
+              .logo-itnavi {
+                width: 130px;
+                height: 50px;
               }
             }
           }
@@ -293,208 +360,9 @@
     }
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1920px){
-  .banner {
-    .banner-bg {
-      width: 100%;
-    }
 
-    .container {
-      margin: 0 auto;
-      overflow: hidden;
-      height: 100%;
-      .banner-area {
-        background-image: url("../../../images/banner.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 1000px;
-        &__content {
-          padding: 15% 0 0 20%;
-          .primary {
-            font-family: 'roboto';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 23px;
-            line-height: 28px;
-            /* identical to box height */
-            margin-bottom: 7px;
-
-            color: #000000;
-          }
-
-          h1 {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 49px;
-            /* or 136% */
-            width: 30%;
-            margin-bottom: 31px;
-            color: #1F3D7D;
-          }
-
-          &-group {
-            display: flex;
-
-            .apply-now {
-              margin-right: 40px;
-              border: none;
-              padding: 25px 0 25px 57px;
-              background: #1F3D7D;
-              box-shadow: 0px 2px 2px #D91C23;
-              cursor: pointer;
-
-              a {
-                text-decoration: none;
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 28px;
-                color: #FFFFFF;
-
-                span {
-                  padding: 26px 20px;
-                  background: #041D51;
-                  color: #FFFFFF;
-                  margin-left: 40px;
-                }
-              }
-            }
-            .apply-now:hover{
-              background: #BC1C20;
-              box-shadow: 0px 2px 2px #1A417E;
-              a{
-                span{
-                  background: #8E070A;
-                }
-              }
-            }
-
-            &-support {
-              p {
-                font-family: 'Roboto';
-                font-style: italic;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 19px;
-                /* identical to box height */
-                margin-left: 4px;
-
-                color: #474747;
-              }
-
-              img {
-                width: 100%;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: 1921px) and (max-width: 6144px){
-  .banner {
-    .banner-bg {
-      width: 100%;
-    }
-
+@media screen and (min-width: 1921px) and (max-width: 6144px) {
     .container {
       max-width: 1920px;
-      margin: 0 auto;
-      overflow: hidden;
-      height: 100%;
-      .banner-area {
-        background-image: url("../../../images/banner.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 555px;
-        &__content {
-          padding: 10% 0 0 20%;
-          .primary {
-            font-family: 'roboto';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 23px;
-            line-height: 28px;
-            /* identical to box height */
-            margin-bottom: 7px;
-
-            color: #000000;
-          }
-
-          h1 {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 49px;
-            /* or 136% */
-            width: 54%;
-            margin-bottom: 31px;
-            color: #1F3D7D;
-          }
-
-          &-group {
-            display: flex;
-
-            .apply-now {
-              margin-right: 40px;
-              border: none;
-              padding: 25px 0 25px 57px;
-              background: #1F3D7D;
-              box-shadow: 0px 2px 2px #D91C23;
-              cursor: pointer;
-
-              a {
-                text-decoration: none;
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 28px;
-                color: #FFFFFF;
-
-                span {
-                  padding: 25px 20px;
-                  background: #041D51;
-                  color: #FFFFFF;
-                  margin-left: 40px;
-                }
-              }
-            }
-            .apply-now:hover{
-              background: #BC1C20;
-              box-shadow: 0px 2px 2px #1A417E;
-              a{
-                span{
-                  background: #8E070A;
-                }
-              }
-            }
-
-            &-support {
-              p {
-                font-family: 'Roboto';
-                font-style: italic;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 19px;
-                /* identical to box height */
-                margin-left: 4px;
-
-                color: #474747;
-              }
-
-              img {
-                width: 100%;
-              }
-            }
-          }
-        }
-      }
-    }
   }
 }

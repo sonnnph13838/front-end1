@@ -3,82 +3,64 @@
   padding: 0;
 }
 
-@media screen and (min-width: 1px) and (max-width: 359px) {
-  header {
-    background-color: #0A4595;
-  }
-  header .container {
-    margin: 0 auto;
-    display: flex;
-    overflow: hidden;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-  header .container__brand {
-    margin-right: 0;
-  }
-  header .container__brand img {
-    width: 40%;
-    height: 100%;
-  }
-  header .container__menu {
-    display: none;
-    background-color: #e0e0e0;
-    text-align: center;
-    position: fixed;
-    top: 30%;
-    left: 35%;
-    z-index: 99;
-  }
-  header .container__menu ul {
-    line-height: 0;
-    display: block;
-    padding: 20px 35px;
-  }
-  header .container__menu ul li {
-    list-style-type: none;
-    margin-right: 0;
-    padding: 10px 0;
-    border-bottom: 1px solid #f1f0f0;
-  }
-  header .container__menu ul li a {
-    text-decoration: none;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: #000000;
-  }
-  header .container__menu ul li:last-child {
-    border: none;
-  }
-  header .container__toggle {
-    display: block;
-    border: none;
-    background-color: #0A4595;
-  }
-  header .container__toggle .icon-bar {
-    width: 23px;
-    height: 1.5px;
-    background-color: #FFFFFF;
-    display: block;
-  }
-  header .container__toggle span {
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 400;
-    color: #ffffff;
-    font-style: normal;
-    text-align: left;
-    margin-bottom: 5px;
-  }
+header {
+  background-color: #0A4595;
 }
-@media screen and (min-width: 360px) and (max-width: 767px) {
+header .container {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+  padding: 0 20%;
+}
+header .container__brand {
+  margin-right: 95px;
+}
+header .container__brand img {
+  width: 155px;
+  height: 77px;
+}
+header .container__menu ul {
+  line-height: 80px;
+  display: flex;
+}
+header .container__menu ul li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+header .container__menu ul li a {
+  text-decoration: none;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+header .container__toggle {
+  display: none;
+  border: none;
+  background-color: #FFF;
+}
+header .container__toggle .icon-bar {
+  width: 35px;
+  height: 3px;
+  background-color: red;
+  display: block;
+  transition: all 0.3s ease-out;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #ffffff;
+  font-style: normal;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1px) and (max-width: 359px) {
   header .container {
-    margin: 0 auto;
-    display: flex;
-    overflow: hidden;
     justify-content: space-between;
     padding: 0 5%;
     background-color: #0A4595;
@@ -89,8 +71,8 @@
     margin-right: 0;
   }
   header .container__brand img {
-    width: 40%;
-    height: 100%;
+    width: 100px;
+    height: 60px;
   }
   header .container__menu {
     width: 90%;
@@ -98,30 +80,25 @@
     background-color: #0A4595;
     text-align: center;
     position: fixed;
-    top: 7%;
+    top: 60px;
     z-index: 99;
   }
-  header .container__menu ul {
+  header .container__menu .navbar-nav {
     line-height: 0;
     display: block;
     padding: 20px 35px;
   }
-  header .container__menu ul li {
-    list-style-type: none;
+  header .container__menu .navbar-nav .nav-item {
     margin-right: 0;
     padding: 10px 0;
     border-bottom: 1px solid #f1f0f0;
   }
-  header .container__menu ul li a {
-    text-decoration: none;
-    font-family: "Roboto";
-    font-style: normal;
+  header .container__menu .navbar-nav .nav-item .nav-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color: #FFFFFF;
   }
-  header .container__menu ul li:last-child {
+  header .container__menu .navbar-nav .nav-item:last-child {
     border: none;
   }
   header .container__toggle {
@@ -133,58 +110,111 @@
     width: 23px;
     height: 1.5px;
     background-color: #FFFFFF;
-    display: block;
   }
-  header .container__toggle span {
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 400;
-    color: #ffffff;
-    font-style: normal;
-    text-align: left;
-    margin-bottom: 5px;
+}
+@media screen and (min-width: 359px) and (max-width: 767px) {
+  header {
+    max-width: 767px;
+    margin: 0 auto;
+  }
+  header .container {
+    justify-content: space-between;
+    padding: 0 30px;
+    background-color: #0A4595;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  header .container__brand {
+    margin-right: 0;
+  }
+  header .container__brand img {
+    width: 100px;
+    height: 60px;
+  }
+  header .container__menu {
+    display: none;
+    background-color: #0A4595;
+    text-align: center;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  header .container__menu .navbar-nav {
+    line-height: 0;
+    display: block;
+    padding: 20px 35px;
+  }
+  header .container__menu .navbar-nav .nav-item {
+    margin-right: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f0f0;
+  }
+  header .container__menu .navbar-nav .nav-item .nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  header .container__menu .navbar-nav .nav-item:last-child {
+    border: none;
+  }
+  header .container__toggle {
+    display: block;
+    border: none;
+    background-color: #0A4595;
+  }
+  header .container__toggle .icon-bar {
+    width: 23px;
+    height: 1.5px;
+    background-color: #FFFFFF;
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1024px) {
-  header {
-    background-color: #0A4595;
-  }
   header .container {
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 0 10%;
-    display: grid;
-    grid-template-columns: 1fr 0.1fr;
+    padding: 0 20px;
+    display: flex;
+    background-color: #0A4595;
+    position: fixed;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
   }
   header .container__brand {
+    width: 100%;
     margin-right: 0;
     text-align: center;
   }
   header .container__brand img {
-    width: 20%;
-    height: 100%;
+    width: 120px;
+    height: 68px;
   }
   header .container__menu {
     display: none;
-    position: absolute;
-    top: 20px;
+    position: fixed;
+    top: 73px;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 99;
   }
   header .container__menu ul {
-    display: flex;
+    display: block;
+    line-height: 0;
   }
   header .container__menu ul li {
-    list-style-type: none;
-    margin-right: 20px;
+    margin-right: 0;
+    padding: 10px 20px;
+    border-bottom: 1px solid #dbeefd;
   }
   header .container__menu ul li a {
-    text-decoration: none;
-    font-family: "roboto";
-    font-style: normal;
-    font-weight: 700;
     font-size: 14px;
-    line-height: 19px;
-    cursor: pointer;
-    color: #FFFFFF;
+    color: #000;
+    font-weight: 500;
   }
   header .container__toggle {
     display: block;
@@ -196,64 +226,6 @@
     height: 1.5px;
     background-color: #FFFFFF;
     display: block;
-  }
-  header .container__toggle span {
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 400;
-    color: #ffffff;
-    font-style: normal;
-    text-align: left;
-    margin-bottom: 5px;
-  }
-}
-@media screen and (min-width: 1025px) and (max-width: 1920px) {
-  header {
-    background-color: #0A4595;
-  }
-  header .container {
-    max-width: 1920px;
-    margin: 0 auto;
-    display: flex;
-    overflow: hidden;
-    padding: 0 20%;
-  }
-  header .container__brand {
-    margin-right: 95px;
-  }
-  header .container__brand img {
-    width: 155px;
-    height: 77px;
-  }
-  header .container__menu ul {
-    line-height: 80px;
-    display: flex;
-  }
-  header .container__menu ul li {
-    list-style-type: none;
-    margin-right: 20px;
-  }
-  header .container__menu ul li a {
-    text-decoration: none;
-    font-family: "roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    cursor: pointer;
-    color: #FFFFFF;
-  }
-  header .container__toggle {
-    display: none;
-    border: none;
-    background-color: #FFF;
-  }
-  header .container__toggle .icon-bar {
-    width: 35px;
-    height: 3px;
-    background-color: red;
-    display: block;
-    transition: all 0.3s ease-out;
   }
   header .container__toggle span {
     font-size: 18px;
@@ -270,60 +242,93 @@
     max-width: 1920px;
     margin: 0 auto;
   }
-  header .container {
-    display: flex;
-    overflow: hidden;
-    padding: 0 20%;
-    background-color: #0A4595;
-  }
-  header .container__brand {
-    margin-right: 95px;
-  }
-  header .container__brand img {
-    width: 155px;
-    height: 77px;
-  }
-  header .container__menu ul {
-    line-height: 80px;
-    display: flex;
-  }
-  header .container__menu ul li {
-    list-style-type: none;
-    margin-right: 20px;
-  }
-  header .container__menu ul li a {
-    text-decoration: none;
-    font-family: "roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    cursor: pointer;
-    color: #FFFFFF;
-  }
-  header .container__toggle {
-    display: none;
-    border: none;
-    background-color: #FFF;
-  }
-  header .container__toggle .icon-bar {
-    width: 35px;
-    height: 3px;
-    background-color: red;
-    display: block;
-    transition: all 0.3s ease-out;
-  }
-  header .container__toggle span {
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 400;
-    color: #ffffff;
-    font-style: normal;
-    text-align: left;
-    margin-bottom: 5px;
-  }
 }
-@media screen and (min-width: 1px) and (max-width: 360px) {
+.banner .banner-bg {
+  width: 100%;
+}
+.banner .container {
+  margin: 0 auto;
+  overflow: hidden;
+  height: 100%;
+}
+.banner .container .banner-area {
+  background-image: url("../../../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+}
+.banner .container .banner-area__content {
+  padding: 250px 0 0 20%;
+}
+.banner .container .banner-area__content .primary {
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 28px;
+  /* identical to box height */
+  margin-bottom: 7px;
+  color: #000000;
+}
+.banner .container .banner-area__content h1 {
+  text-transform: capitalize;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  /* or 136% */
+  width: 450px;
+  margin-bottom: 31px;
+  color: #1F3D7D;
+}
+.banner .container .banner-area__content-group {
+  display: flex;
+}
+.banner .container .banner-area__content-group .apply-now {
+  margin-right: 40px;
+  border: none;
+  padding: 25px 0 25px 57px;
+  background: #1F3D7D;
+  box-shadow: 0px 2px 2px #D91C23;
+  cursor: pointer;
+}
+.banner .container .banner-area__content-group .apply-now a {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.banner .container .banner-area__content-group .apply-now a span {
+  padding: 26px 20px;
+  background: #041D51;
+  color: #FFFFFF;
+  margin-left: 40px;
+}
+.banner .container .banner-area__content-group .apply-now:hover {
+  background: #BC1C20;
+  box-shadow: 0px 2px 2px #1A417E;
+}
+.banner .container .banner-area__content-group .apply-now:hover a span {
+  background: #8E070A;
+}
+.banner .container .banner-area__content-group-support .recruitment-support {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 4px;
+  color: #474747;
+}
+.banner .container .banner-area__content-group-support .logo-itnavi {
+  width: 100%;
+}
+
+@media screen and (min-width: 1px) and (max-width: 359px) {
   .banner .banner-bg {
     width: 345%;
     margin-left: -388px;
@@ -341,7 +346,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 555px;
-    padding: 15% 0 0 5%;
+  }
+  .banner .container .banner-area__content {
+    padding: 105px 0 0 5%;
   }
   .banner .container .banner-area__content .primary {
     font-family: "Roboto";
@@ -407,49 +414,27 @@
     height: 70%;
   }
 }
-@media screen and (min-width: 361px) and (max-width: 767px) {
+@media screen and (min-width: 359px) and (max-width: 767px) {
   .banner .banner-bg {
     height: 100%;
   }
-  .banner .container {
-    max-width: 1920px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
   .banner .container .banner-area {
-    padding: 0 20px;
-    background-image: url("../../../images/banner.png");
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 835px;
   }
   .banner .container .banner-area__content {
-    padding: 35% 0 0 5%;
+    padding: 170px 0 0 30px;
   }
   .banner .container .banner-area__content .primary {
-    font-family: "Roboto";
-    width: 90%;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    /* identical to box height */
     margin-bottom: 6px;
-    color: #000000;
   }
   .banner .container .banner-area__content h1 {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 800;
     font-size: 24px;
     line-height: 29px;
-    /* or 136% */
     width: 90%;
     margin-bottom: 20px;
-    color: #1F3D7D;
-  }
-  .banner .container .banner-area__content-group {
-    display: flex;
   }
   .banner .container .banner-area__content-group .apply-now {
     display: none;
@@ -475,19 +460,9 @@
     color: #FFFFFF;
     margin-left: 40px;
   }
-  .banner .container .banner-area__content-group-support p {
-    font-family: "Roboto";
-    font-style: italic;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    /* identical to box height */
-    margin-left: 4px;
-    color: #474747;
-  }
-  .banner .container .banner-area__content-group-support img {
-    width: 70%;
-    height: 70%;
+  .banner .container .banner-area__content-group-support .logo-itnavi {
+    width: 150px;
+    height: 65px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -506,7 +481,7 @@
     height: 666px;
   }
   .banner .container .banner-area__content {
-    padding: 15% 0 0 5%;
+    padding: 215px 0 0 170px;
   }
   .banner .container .banner-area__content .primary {
     font-family: "Roboto";
@@ -526,7 +501,7 @@
     font-size: 24px;
     line-height: 29px;
     /* or 136% */
-    width: 38%;
+    width: 340px;
     margin-bottom: 20px;
     color: #1F3D7D;
   }
@@ -542,210 +517,27 @@
     box-shadow: 0px 2px 2px #D91C23;
     cursor: pointer;
   }
-  .banner .container .banner-area__content-group .apply-now a {
-    text-decoration: none;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
+  .banner .container .banner-area__content-group .apply-now .apply {
     font-size: 22px;
-    line-height: 28px;
-    color: #FFFFFF;
   }
-  .banner .container .banner-area__content-group .apply-now a span {
-    padding: 20px 20px;
-    background: #041D51;
-    color: #FFFFFF;
+  .banner .container .banner-area__content-group .apply-now .apply .arrow-right {
+    padding: 27px 20px;
     margin-left: 25px;
   }
   .banner .container .banner-area__content-group-support {
     padding-top: 10px;
   }
-  .banner .container .banner-area__content-group-support p {
-    font-family: "Roboto";
-    font-style: italic;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 14px;
-    /* identical to box height */
-    margin-left: 4px;
-    color: #474747;
+  .banner .container .banner-area__content-group-support .recruitment-support {
+    font-size: 14px;
   }
-  .banner .container .banner-area__content-group-support img {
-    width: 60%;
-    height: 60%;
-  }
-}
-@media screen and (min-width: 1025px) and (max-width: 1920px) {
-  .banner .banner-bg {
-    width: 100%;
-  }
-  .banner .container {
-    margin: 0 auto;
-    overflow: hidden;
-    height: 100%;
-  }
-  .banner .container .banner-area {
-    background-image: url("../../../images/banner.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1000px;
-  }
-  .banner .container .banner-area__content {
-    padding: 15% 0 0 20%;
-  }
-  .banner .container .banner-area__content .primary {
-    font-family: "roboto";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 23px;
-    line-height: 28px;
-    /* identical to box height */
-    margin-bottom: 7px;
-    color: #000000;
-  }
-  .banner .container .banner-area__content h1 {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 49px;
-    /* or 136% */
-    width: 30%;
-    margin-bottom: 31px;
-    color: #1F3D7D;
-  }
-  .banner .container .banner-area__content-group {
-    display: flex;
-  }
-  .banner .container .banner-area__content-group .apply-now {
-    margin-right: 40px;
-    border: none;
-    padding: 25px 0 25px 57px;
-    background: #1F3D7D;
-    box-shadow: 0px 2px 2px #D91C23;
-    cursor: pointer;
-  }
-  .banner .container .banner-area__content-group .apply-now a {
-    text-decoration: none;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    color: #FFFFFF;
-  }
-  .banner .container .banner-area__content-group .apply-now a span {
-    padding: 26px 20px;
-    background: #041D51;
-    color: #FFFFFF;
-    margin-left: 40px;
-  }
-  .banner .container .banner-area__content-group .apply-now:hover {
-    background: #BC1C20;
-    box-shadow: 0px 2px 2px #1A417E;
-  }
-  .banner .container .banner-area__content-group .apply-now:hover a span {
-    background: #8E070A;
-  }
-  .banner .container .banner-area__content-group-support p {
-    font-family: "Roboto";
-    font-style: italic;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-    margin-left: 4px;
-    color: #474747;
-  }
-  .banner .container .banner-area__content-group-support img {
-    width: 100%;
+  .banner .container .banner-area__content-group-support .logo-itnavi {
+    width: 130px;
+    height: 50px;
   }
 }
 @media screen and (min-width: 1921px) and (max-width: 6144px) {
-  .banner .banner-bg {
-    width: 100%;
-  }
-  .banner .container {
+  .container {
     max-width: 1920px;
-    margin: 0 auto;
-    overflow: hidden;
-    height: 100%;
-  }
-  .banner .container .banner-area {
-    background-image: url("../../../images/banner.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 555px;
-  }
-  .banner .container .banner-area__content {
-    padding: 10% 0 0 20%;
-  }
-  .banner .container .banner-area__content .primary {
-    font-family: "roboto";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 23px;
-    line-height: 28px;
-    /* identical to box height */
-    margin-bottom: 7px;
-    color: #000000;
-  }
-  .banner .container .banner-area__content h1 {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 49px;
-    /* or 136% */
-    width: 54%;
-    margin-bottom: 31px;
-    color: #1F3D7D;
-  }
-  .banner .container .banner-area__content-group {
-    display: flex;
-  }
-  .banner .container .banner-area__content-group .apply-now {
-    margin-right: 40px;
-    border: none;
-    padding: 25px 0 25px 57px;
-    background: #1F3D7D;
-    box-shadow: 0px 2px 2px #D91C23;
-    cursor: pointer;
-  }
-  .banner .container .banner-area__content-group .apply-now a {
-    text-decoration: none;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    color: #FFFFFF;
-  }
-  .banner .container .banner-area__content-group .apply-now a span {
-    padding: 25px 20px;
-    background: #041D51;
-    color: #FFFFFF;
-    margin-left: 40px;
-  }
-  .banner .container .banner-area__content-group .apply-now:hover {
-    background: #BC1C20;
-    box-shadow: 0px 2px 2px #1A417E;
-  }
-  .banner .container .banner-area__content-group .apply-now:hover a span {
-    background: #8E070A;
-  }
-  .banner .container .banner-area__content-group-support p {
-    font-family: "Roboto";
-    font-style: italic;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-    margin-left: 4px;
-    color: #474747;
-  }
-  .banner .container .banner-area__content-group-support img {
-    width: 100%;
   }
 }
 .details {
@@ -1245,7 +1037,7 @@
   height: 400px;
   margin-bottom: 9px;
 }
-.overview .container .overview-area__married:nth-child(1) .overview-area__married-single:first-child .overview-area__married-single-child p {
+.overview .container .overview-area__married:nth-child(1) .overview-area__married-single:first-child .overview-area__married-single-child .content-child {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -1256,13 +1048,13 @@
   text-align: justify;
   color: #FFFFFF;
 }
-.overview .container .overview-area__married:nth-child(1) .overview-area__married-single:first-child .overview-area__married-single-child img {
+.overview .container .overview-area__married:nth-child(1) .overview-area__married-single:first-child .overview-area__married-single-child .img-child {
   margin-bottom: 24px;
 }
 .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:last-child {
   height: 290px;
 }
-.overview .container .overview-area__married:nth-child(1) .overview-area__married-single:last-child .overview-area__married-single-child p {
+.overview .container .overview-area__married:nth-child(1) .overview-area__married-single:last-child .overview-area__married-single-child .content-child {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -1285,7 +1077,7 @@
   display: block;
   padding: 0 42px 0 19px;
 }
-.overview .container .overview-area__married:nth-child(2) .overview-area__married-single p {
+.overview .container .overview-area__married:nth-child(2) .overview-area__married-single .content-single {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -1296,7 +1088,7 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.overview .container .overview-area__married:nth-child(2) .overview-area__married-single h2 {
+.overview .container .overview-area__married:nth-child(2) .overview-area__married-single .title-single {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -1311,7 +1103,7 @@
   height: 290px;
   margin-bottom: 9px;
 }
-.overview .container .overview-area__married:nth-child(3) .overview-area__married-single:first-child .overview-area__married-single-child p {
+.overview .container .overview-area__married:nth-child(3) .overview-area__married-single:first-child .overview-area__married-single-child .content-child {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -1325,7 +1117,7 @@
 .overview .container .overview-area__married:nth-child(3) .overview-area__married-single:last-child {
   height: 400px;
 }
-.overview .container .overview-area__married:nth-child(3) .overview-area__married-single:last-child .overview-area__married-single-child p {
+.overview .container .overview-area__married:nth-child(3) .overview-area__married-single:last-child .overview-area__married-single-child .content-child {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -1341,7 +1133,7 @@
   display: flex;
   background-color: #0A4595;
 }
-.overview .container .overview-area__married-single h1 {
+.overview .container .overview-area__married-single .title-number {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
@@ -1424,7 +1216,7 @@
     padding: 18px 20px 0 25px;
   }
 }
-@media screen and (min-width: 360px) and (max-width: 767px) {
+@media screen and (min-width: 359px) and (max-width: 767px) {
   .overview {
     margin-bottom: 0;
   }
@@ -1436,26 +1228,23 @@
   .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:first-child {
     height: 200px;
     margin-bottom: 0;
+    padding-bottom: 35px;
   }
-  .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:first-child .overview-area__married-single-child p {
-    padding: 18px 20px 0 25px;
+  .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:first-child .overview-area__married-single-child .content-child {
+    padding: 18px 20px 20px 25px;
   }
-  .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:first-child .overview-area__married-single-child img {
-    left: 145px;
-    bottom: 130px;
-    position: relative;
+  .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:first-child .overview-area__married-single-child .img-child {
+    margin-left: 50px;
   }
   .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:last-child .overview-area__married-single-child {
     height: 130px;
     margin-bottom: 0;
   }
-  .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:last-child .overview-area__married-single-child p {
-    padding: 75px 20px 0 25px;
+  .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:last-child .overview-area__married-single-child .content-child {
+    padding: 15px 20px 25px 25px;
   }
-  .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:last-child .overview-area__married-single-child img {
-    left: 111px;
-    bottom: 205px;
-    position: relative;
+  .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:last-child .overview-area__married-single-child .img-child {
+    margin-left: 20px;
   }
   .overview .container .overview-area__married:nth-child(2) .overview-area__married-single {
     height: 614px;
@@ -1466,46 +1255,32 @@
     height: 210px;
     margin-bottom: 0;
   }
-  .overview .container .overview-area__married:nth-child(3) .overview-area__married-single:first-child .overview-area__married-single-child p {
-    padding: 18px 20px 0 25px;
+  .overview .container .overview-area__married:nth-child(3) .overview-area__married-single:first-child .overview-area__married-single-child .content-child {
+    padding: 18px 20px 20px 25px;
   }
-  .overview .container .overview-area__married:nth-child(3) .overview-area__married-single:first-child .overview-area__married-single-child img {
-    left: 155px;
-    bottom: 150px;
-    position: relative;
+  .overview .container .overview-area__married:nth-child(3) .overview-area__married-single:first-child .overview-area__married-single-child .img-child {
+    margin-left: 45px;
   }
   .overview .container .overview-area__married:nth-child(3) .overview-area__married-single:last-child {
-    height: 275px;
+    padding-bottom: 111px;
   }
   .overview .container .overview-area__married:nth-child(3) .overview-area__married-single:last-child .overview-area__married-single-child {
     height: 200px;
     margin-bottom: 0;
   }
-  .overview .container .overview-area__married:nth-child(3) .overview-area__married-single:last-child .overview-area__married-single-child p {
-    padding: 75px 20px 0 25px;
-  }
-  .overview .container .overview-area__married:nth-child(3) .overview-area__married-single:last-child .overview-area__married-single-child img {
-    left: 145px;
-    bottom: 217px;
-    position: relative;
+  .overview .container .overview-area__married:nth-child(3) .overview-area__married-single:last-child .overview-area__married-single-child .content-child {
+    padding: 20px 20px 20px 25px;
   }
   .overview .container .overview-area__married-single {
-    display: block;
     margin-bottom: 0;
   }
-  .overview .container .overview-area__married-single h1 {
+  .overview .container .overview-area__married-single .title-number {
     margin-top: -1px;
     font-size: 60px;
     padding: 18px 20px 0 25px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .overview {
-    margin-bottom: 55px;
-  }
-  .overview .container {
-    margin: 0 auto;
-  }
   .overview .container .overview-area {
     padding: 0 5%;
     display: block;
@@ -1519,24 +1294,13 @@
     height: 290px;
     margin-bottom: 9px;
   }
-  .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:first-child .overview-area__married-single-child p {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
+  .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:first-child .overview-area__married-single-child .content-child {
     padding: 41px 36px 38px 0;
-    text-align: justify;
-    color: #FFFFFF;
-  }
-  .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:first-child .overview-area__married-single-child img {
-    margin-bottom: 24px;
   }
   .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:last-child {
     height: 290px;
   }
-  .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:last-child .overview-area__married-single-child p {
+  .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:last-child .overview-area__married-single-child .content-child {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
@@ -1560,7 +1324,7 @@
     display: block;
     padding: 0 42px 0 19px;
   }
-  .overview .container .overview-area__married:nth-child(2) .overview-area__married-single p {
+  .overview .container .overview-area__married:nth-child(2) .overview-area__married-single .content-single {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -1571,7 +1335,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
   }
-  .overview .container .overview-area__married:nth-child(2) .overview-area__married-single h2 {
+  .overview .container .overview-area__married:nth-child(2) .overview-area__married-single .title-single {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
@@ -1590,7 +1354,7 @@
     height: 360px;
     margin-bottom: 9px;
   }
-  .overview .container .overview-area__married:nth-child(3) .overview-area__married-single:first-child .overview-area__married-single-child p {
+  .overview .container .overview-area__married:nth-child(3) .overview-area__married-single:first-child .overview-area__married-single-child .content-child {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
@@ -1604,7 +1368,7 @@
   .overview .container .overview-area__married:nth-child(3) .overview-area__married-single:last-child {
     height: 360px;
   }
-  .overview .container .overview-area__married:nth-child(3) .overview-area__married-single:last-child .overview-area__married-single-child p {
+  .overview .container .overview-area__married:nth-child(3) .overview-area__married-single:last-child .overview-area__married-single-child .content-child {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
@@ -1612,132 +1376,6 @@
     line-height: 24px;
     /* or 150% */
     padding: 41px 36px 15px 0;
-    text-align: justify;
-    color: #FFFFFF;
-  }
-  .overview .container .overview-area__married-single {
-    overflow: hidden;
-    display: flex;
-    background-color: #0A4595;
-  }
-  .overview .container .overview-area__married-single h1 {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 80px;
-    line-height: 94px;
-    /* identical to box height */
-    padding: 24px 20px 0 35px;
-    color: #FDC80A;
-  }
-}
-@media screen and (min-width: 1025px) and (max-width: 1920px) {
-  .overview {
-    margin-bottom: 55px;
-  }
-  .overview .container {
-    max-width: 1920px;
-    margin: 0 auto;
-  }
-  .overview .container .overview-area {
-    padding: 0 20%;
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    margin-top: -3%;
-    grid-gap: 9px;
-  }
-  .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:first-child {
-    height: 400px;
-    margin-bottom: 9px;
-  }
-  .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:first-child .overview-area__married-single-child p {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
-    padding: 41px 36px 60px 0;
-    text-align: justify;
-    color: #FFFFFF;
-  }
-  .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:first-child .overview-area__married-single-child img {
-    margin-bottom: 24px;
-  }
-  .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:last-child {
-    height: 290px;
-  }
-  .overview .container .overview-area__married:nth-child(1) .overview-area__married-single:last-child .overview-area__married-single-child p {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
-    padding: 41px 36px 15px 0;
-    text-align: justify;
-    color: #FFFFFF;
-  }
-  .overview .container .overview-area__married:nth-child(2) {
-    background-image: url("../../../images/images5.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-  .overview .container .overview-area__married:nth-child(2) .overview-area__married-single {
-    position: relative;
-    top: 72%;
-    background: none;
-    display: block;
-    padding: 0 42px 0 19px;
-  }
-  .overview .container .overview-area__married:nth-child(2) .overview-area__married-single p {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 40px;
-    /* or 222% */
-    text-align: justify;
-    text-transform: uppercase;
-    color: #FFFFFF;
-  }
-  .overview .container .overview-area__married:nth-child(2) .overview-area__married-single h2 {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
-    /* or 125% */
-    text-align: justify;
-    text-transform: uppercase;
-    color: #FFFFFF;
-  }
-  .overview .container .overview-area__married:nth-child(3) .overview-area__married-single:first-child {
-    height: 290px;
-    margin-bottom: 9px;
-  }
-  .overview .container .overview-area__married:nth-child(3) .overview-area__married-single:first-child .overview-area__married-single-child p {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
-    padding: 41px 36px 25px 0;
-    text-align: justify;
-    color: #FFFFFF;
-  }
-  .overview .container .overview-area__married:nth-child(3) .overview-area__married-single:last-child {
-    height: 400px;
-  }
-  .overview .container .overview-area__married:nth-child(3) .overview-area__married-single:last-child .overview-area__married-single-child p {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
-    padding: 41px 36px 30px 0;
     text-align: justify;
     color: #FFFFFF;
   }

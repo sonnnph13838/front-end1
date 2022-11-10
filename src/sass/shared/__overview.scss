@@ -18,7 +18,7 @@
           margin-bottom: 9px;
 
           .overview-area__married-single-child {
-            p {
+            .content-child {
               font-family: 'Roboto';
               font-style: normal;
               font-weight: 500;
@@ -30,7 +30,7 @@
               color: #FFFFFF;
             }
 
-            img {
+            .img-child {
               margin-bottom: 24px;
             }
           }
@@ -39,7 +39,7 @@
         .overview-area__married-single:last-child {
           height: 290px;
           .overview-area__married-single-child {
-            p {
+            .content-child {
               font-family: 'Roboto';
               font-style: normal;
               font-weight: 500;
@@ -49,9 +49,6 @@
               padding: 41px 36px 15px 0;
               text-align: justify;
               color: #FFFFFF;
-            }
-
-            img {
             }
           }
         }
@@ -69,7 +66,7 @@
           display: block;
           padding: 0 42px 0 19px;
 
-          p {
+          .content-single {
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 400;
@@ -83,7 +80,7 @@
             color: #FFFFFF;
           }
 
-          h2 {
+          .title-single {
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 700;
@@ -105,7 +102,7 @@
           margin-bottom: 9px;
 
           .overview-area__married-single-child {
-            p {
+            .content-child {
               font-family: 'Roboto';
               font-style: normal;
               font-weight: 500;
@@ -116,17 +113,13 @@
               text-align: justify;
               color: #FFFFFF;
             }
-
-            img {
-
-            }
           }
         }
 
         .overview-area__married-single:last-child {
           height: 400px;
           .overview-area__married-single-child {
-            p {
+            .content-child {
               font-family: 'Roboto';
               font-style: normal;
               font-weight: 500;
@@ -136,9 +129,6 @@
               padding: 41px 36px 30px 0;
               text-align: justify;
               color: #FFFFFF;
-            }
-
-            img {
             }
           }
         }
@@ -150,7 +140,7 @@
           display: flex;
           background-color: #0A4595;
 
-          h1 {
+           .title-number {
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 300;
@@ -278,7 +268,7 @@
   }
 }
 
-@media screen and (min-width: 360px) and (max-width: 767px) {
+@media screen and (min-width: 359px) and (max-width: 767px) {
   .overview {
     margin-bottom: 0;
 
@@ -292,16 +282,14 @@
           .overview-area__married-single:first-child {
             height: 200px;
             margin-bottom: 0;
-
+            padding-bottom: 35px;
             .overview-area__married-single-child {
-              p {
-                padding: 18px 20px 0 25px;
+              .content-child {
+                padding: 18px 20px 20px 25px;
               }
 
-              img {
-                left: 145px;
-                bottom: 130px;
-                position: relative;
+              .img-child {
+                margin-left: 50px;
               }
             }
           }
@@ -311,14 +299,12 @@
               height: 130px;
               margin-bottom: 0;
 
-              p {
-                padding: 75px 20px 0 25px;
+              .content-child {
+                padding: 15px 20px 25px 25px;
               }
 
-              img {
-                left: 111px;
-                bottom: 205px;
-                position: relative;
+              .img-child {
+                margin-left: 20px;
               }
             }
           }
@@ -329,12 +315,6 @@
             height: 614px;
             padding: 0 15px 0 15px;
             top: 445px;
-
-            p {
-            }
-
-            h2 {
-            }
           }
         }
 
@@ -344,32 +324,28 @@
             margin-bottom: 0;
 
             .overview-area__married-single-child {
-              p {
-                padding: 18px 20px 0 25px;
+              .content-child {
+                padding: 18px 20px 20px 25px;
               }
 
-              img {
-                left: 155px;
-                bottom: 150px;
-                position: relative;
+              .img-child {
+                margin-left: 45px;
               }
             }
           }
 
           .overview-area__married-single:last-child {
-            height: 275px;
+            padding-bottom: 111px;
             .overview-area__married-single-child {
               height: 200px;
               margin-bottom: 0;
 
-              p {
-                padding: 75px 20px 0 25px;
+              .content-child {
+                padding: 20px 20px 20px 25px;
               }
 
-              img {
-                left: 145px;
-                bottom: 217px;
-                position: relative;
+              .img-child {
+
               }
             }
           }
@@ -377,10 +353,9 @@
 
         &__married {
           &-single {
-            display: block;
             margin-bottom: 0;
 
-            h1 {
+            .title-number {
               margin-top: -1px;
               font-size: 60px;
               padding: 18px 20px 0 25px;
@@ -394,11 +369,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .overview {
-    margin-bottom: 55px;
-
     .container {
-      margin: 0 auto;
-
       .overview-area {
         padding: 0 5%;
         display: block;
@@ -412,20 +383,8 @@
             margin-bottom: 9px;
 
             .overview-area__married-single-child {
-              p {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 24px;
-                /* or 150% */
+              .content-child {
                 padding: 41px 36px 38px 0;
-                text-align: justify;
-                color: #FFFFFF;
-              }
-
-              img {
-                margin-bottom: 24px;
               }
             }
           }
@@ -433,7 +392,7 @@
           .overview-area__married-single:last-child {
             height: 290px;
             .overview-area__married-single-child {
-              p {
+              .content-child {
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 500;
@@ -443,9 +402,6 @@
                 padding: 41px 36px 15px 0;
                 text-align: justify;
                 color: #FFFFFF;
-              }
-
-              img {
               }
             }
           }
@@ -463,7 +419,7 @@
             display: block;
             padding: 0 42px 0 19px;
 
-            p {
+            .content-single {
               font-family: 'Roboto';
               font-style: normal;
               font-weight: 400;
@@ -477,7 +433,7 @@
               color: #FFFFFF;
             }
 
-            h2 {
+            .title-single {
               font-family: 'Roboto';
               font-style: normal;
               font-weight: 700;
@@ -501,7 +457,7 @@
             margin-bottom: 9px;
 
             .overview-area__married-single-child {
-              p {
+              .content-child {
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 500;
@@ -512,17 +468,13 @@
                 text-align: justify;
                 color: #FFFFFF;
               }
-
-              img {
-
-              }
             }
           }
 
           .overview-area__married-single:last-child {
             height: 360px;
             .overview-area__married-single-child {
-              p {
+              .content-child {
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 500;
@@ -532,179 +484,6 @@
                 padding: 41px 36px 15px 0;
                 text-align: justify;
                 color: #FFFFFF;
-              }
-
-              img {
-              }
-            }
-          }
-        }
-
-        &__married {
-          &-single {
-            overflow: hidden;
-            display: flex;
-            background-color: #0A4595;
-
-            h1 {
-              font-family: 'Roboto';
-              font-style: normal;
-              font-weight: 300;
-              font-size: 80px;
-              line-height: 94px;
-              /* identical to box height */
-              padding: 24px 20px 0 35px;
-              color: #FDC80A;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1920px) {
-  .overview {
-    margin-bottom: 55px;
-
-    .container {
-      max-width: 1920px;
-      margin: 0 auto;
-
-      .overview-area {
-        padding: 0 20%;
-        display: grid;
-        grid-template-columns: 33.3% 33.3% 33.3%;
-        margin-top: -3%;
-        grid-gap: 9px;
-
-        &__married:nth-child(1) {
-          .overview-area__married-single:first-child {
-            height: 400px;
-            margin-bottom: 9px;
-
-            .overview-area__married-single-child {
-              p {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 24px;
-                /* or 150% */
-                padding: 41px 36px 60px 0;
-                text-align: justify;
-                color: #FFFFFF;
-              }
-
-              img {
-                margin-bottom: 24px;
-              }
-            }
-          }
-
-          .overview-area__married-single:last-child {
-            height: 290px;
-            .overview-area__married-single-child {
-              p {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 24px;
-                /* or 150% */
-                padding: 41px 36px 15px 0;
-                text-align: justify;
-                color: #FFFFFF;
-              }
-
-              img {
-              }
-            }
-          }
-        }
-
-        &__married:nth-child(2) {
-          background-image: url("../../../images/images5.png");
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-
-          .overview-area__married-single {
-            position: relative;
-            top: 72%;
-            background: none;
-            display: block;
-            padding: 0 42px 0 19px;
-
-            p {
-              font-family: 'Roboto';
-              font-style: normal;
-              font-weight: 400;
-              font-size: 18px;
-              line-height: 40px;
-              /* or 222% */
-
-              text-align: justify;
-              text-transform: uppercase;
-
-              color: #FFFFFF;
-            }
-
-            h2 {
-              font-family: 'Roboto';
-              font-style: normal;
-              font-weight: 700;
-              font-size: 32px;
-              line-height: 40px;
-              /* or 125% */
-
-              text-align: justify;
-              text-transform: uppercase;
-
-              color: #FFFFFF;
-            }
-          }
-        }
-
-        &__married:nth-child(3) {
-          .overview-area__married-single:first-child {
-            height: 290px;
-            margin-bottom: 9px;
-
-            .overview-area__married-single-child {
-              p {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 24px;
-                /* or 150% */
-                padding: 41px 36px 25px 0;
-                text-align: justify;
-                color: #FFFFFF;
-              }
-
-              img {
-
-              }
-            }
-          }
-
-          .overview-area__married-single:last-child {
-            height: 400px;
-            .overview-area__married-single-child {
-              p {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 24px;
-                /* or 150% */
-                padding: 41px 36px 30px 0;
-                text-align: justify;
-                color: #FFFFFF;
-              }
-
-              img {
               }
             }
           }
